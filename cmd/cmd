@@ -1,0 +1,20 @@
+    1  yum list installed | grep ca-certi
+    2  ll
+    3  mkdir tr
+    4  cd tr/
+    5  terraform
+    6  wget -c https://releases.hashicorp.com/terraform/0.13.4/terraform_0.13.4_linux_amd64.zip
+    7  unzip terraform_0.13.4_linux_amd64.zip
+    8  sudo mv terraform /usr/sbin/
+    9  terraform version
+   10  mkdir providers
+   11  cd providers/
+   12  vim main.tf
+   13  export TF_LOG=TRACE
+   14  terraform init
+   15  terraform plan
+   16  terraform apply
+   17  echo history > cmd
+   18  ll
+   19  vi cmd 
+   20  history > cmd
